@@ -1,0 +1,896 @@
+html body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    font-family: 'Libre Baskerville', serif;
+    background-image: url(img/Dreamstime4.jpg), url(img/Grass.jpg);
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;}
+    
+    
+
+header {
+    position: relative;
+    left: 30px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 35px;}
+
+header a {
+    color: white;
+    list-style: none;
+    text-decoration: none;}
+
+header a:hover {
+    color: rgb(136, 208, 236);}
+
+.button {
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 900;
+    font-family: 'Libre Baskerville', serif; 
+    padding: 10px 40px;
+    font-size: 25px;
+    background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+    background-color: rgb(129, 53, 3);
+    position: relative;
+    left: 450px;
+    top: 20px;}
+
+button:hover {
+    color: rgb(136, 208, 236);}
+
+.container1 {
+    text-align: center;
+    color: white;
+    margin-left: 210px;
+    width: 54vw;
+    height: 100vh;}
+
+.container2 {
+    text-align: center;
+    color: white;
+    margin-left: 210px;
+    width: 54vw;
+    height: 75vh;}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 210px;
+    width: 54vw;
+    height: auto;}
+
+.container4 {
+    text-align: center;
+    margin-left: 200px;
+    width: 54vw;
+    height: 70vh;}
+
+.container-space {
+    width: 100vw;
+    height: 15vw;}
+
+.hr {
+    background-image: url(img/Flowers.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    border: 0;}
+
+    /* Nav Bar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(27, 27, 27, 0.39);
+    align-items: center;
+    font-size: 30px;
+    height: 50px;
+    position: fixed;
+    width: 100vw;
+    color: white;}
+
+ul {display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    position: relative;
+    right: 20px;
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    padding: 0 20px;}
+
+ul li a {
+    color: white;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;}
+
+ul li a:hover {
+    color: rgb(136, 208, 236)}
+
+/* section 2 images */
+
+.img {
+    position: scroll;
+    display: flex;}
+
+.img1 {
+    background-size: contain;
+    height: auto;
+    width: 100%;}
+
+/* Section Jason & Troy */
+
+.j {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 80px;
+    position: relative;
+    top: 200px;
+    right: 200px;}
+.and {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 500;
+    font-size: 80px;
+    position: relative;
+    top: 200px;}
+.t {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 80px;
+    position: relative;
+    top: 200px;
+    left: 200px;}
+
+/* Section Quote */
+
+.quote {
+    font-weight: 550;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    position: relative;
+    top: 50px;
+    font-size: 60px;}
+
+.invite {
+    margin-bottom: 0;
+    font-size: 22px;}
+
+/* Section Info */
+
+.info-h1 {
+    margin-top: 0;
+    font-size: 65px;
+    position: relative;
+    top: 75px;}
+
+.venu-h2 {
+    font-size: 40px;
+    position: relative;
+    top: 15px;}
+
+.cont-menu {
+    color: white;
+    margin-right: 300px;
+    margin-left: 300px;
+    width: 54vw;
+    height: 90vh;
+}
+
+.menu {
+    width: 40vw;
+    font-size: 20px;
+}
+
+.food-drinks {
+    font-size: 40px;
+    position: relative;
+    top: 15px;}
+
+.venu {
+    position: relative;
+    top: 20px;
+    margin: 0;
+    width: 40vw;
+    font-size: 20px;}
+
+.overlay-cont {width: 225px;
+                position: relative;
+                left: 40px}
+
+.venu-img {
+    max-width: 40vw;
+    border-radius: 10px;}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    height: 160px;
+    width: 100%;
+    opacity: 0;
+    transition: .2 ease;
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, 0.0);}
+
+.overlay-cont:hover .overlay {
+    opacity: 1;
+    color: white;}
+
+.button-text {
+    padding: 40px 150px;
+    background-color: rgba(27, 27, 27, 0.0);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);}
+
+.button-text:hover {color: white;}
+
+.venue-logo {position: relative;
+            left: 30px;
+            width: 300px;
+            height: 150px;}
+
+.links {
+    color: rgb(136, 208, 236);
+    text-decoration: none;}
+
+/* Section Schedule */
+
+.sch-h1 {
+    color: white;
+    font-size: 65px;}
+
+.small-cont-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.ol-events {
+    color: white;
+    margin-left: 0;
+    text-align: left;}
+
+.ol-times {
+    color: white;
+    margin-left: 100px;
+    padding: 0;}
+
+.ol-brackets {
+    font-size: 20px;
+}
+
+ol li {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 30px;}
+
+/* footer */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    width: 100vw;
+    height: 10vh;}
+    /* border: 1px solid white;} */
+
+
+    @media screen and (max-width: 1280px) {
+        html body {background-image: url(img/Dreamstime4.jpg), url(img/Grass.jpg);
+                    background-position: center;
+                overflow-x: hidden;}
+        
+        .j, .and, .t {font-size: 60px;}
+        
+        .container1 {margin-left: 90px;}
+
+        .container2 {height: 60vh;
+                    margin-left: 90px;}
+
+        .quote {font-size: 40px;
+                font-weight: 550;}
+
+        .invite {font-size: 18px;}
+
+        .info-h1, .sch-h1 {font-size: 50px;}
+
+        .cont-menu {
+            color: white;
+            margin-left: 120px;
+            margin-right: 120px;
+            width: 60vw;
+            height: 900px;}
+
+        .menu {
+            width: 50vw;
+            font-size: 20px;
+        }
+
+        .venu-h2 {font-size: 30px;
+                padding-top: 10px;}
+
+        .venue-logo {position: relative;
+                    left: 0px;
+                    width: 200px;
+                    height: 100px}
+
+        .overlay-cont {position: relative;
+                        left: 50px;
+                        width: 225px;}
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            width: 100%;
+            opacity: 0;
+            transition: .2 ease;
+            border-radius: 10px;
+            background-color: rgba(50, 50, 50, 0.8);}
+
+        .button-text {
+            display: flex;
+            padding: 25px 100px 25px 100px;
+            background-color: rgba(27, 27, 27, 0.0);
+            border: none;
+            cursor: pointer;
+            color: gray;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);}
+
+        .venu-img {width: 500px;
+             height: 120px;}
+
+        .venu {font-size: 18px;}
+
+        .food-drink {font-size: 18px;
+                    width: 600px;}
+
+        .container3 {margin-left: 90px;}
+
+        .container4 {height: 40vw;
+                    margin-left: 90px;}
+
+        .container-space {display: none;}
+
+        ol li {font-size: 25px;}
+
+        .button {
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 900;
+            font-family: 'Libre Baskerville', serif; 
+            padding: 5px 20px;
+            font-size: 20px;
+            background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+            background-color: rgb(129, 53, 3);
+            position: relative;
+            left: 180px;}
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        html body {background-image: url(img/dreamstime3.jpg), url(img/Grass.jpg);}
+        
+        .img1 {display: none;}
+        .img2 {display: none;}
+
+        .container1 .container2 .container3 .container4 {margin-left: 50px;}
+
+        .container2 {height: 100vh;}
+
+        .j, .and, .t {font-size: 60px;}   
+        
+        .quote {font-size: 40px;
+                font-weight: 550;}
+
+        .invite {font-size: 18px;}
+
+        .container3 {height: 100vh;}
+
+        .info-h1, .sch-h1 {font-size: 40px;}
+
+        .venu-h2 {font-size: 25px;
+                    position: relative;
+                    top: 35px;}
+        
+        .food-drinks {font-size: 25px;
+                        position: relative;
+                        bottom: 35px;}
+
+        .cont-menu {
+            color: white;
+            margin-left: 120px;
+            margin-right: 120px;
+            width: 60vw;
+            height: 1000px;}
+
+        .menu {
+            width: 50vw;
+            font-size: 20px;
+        }
+
+        .venue-logo {position: relative;
+                    left: -30px;
+                    top: 30px;
+                    width: 200px;
+                    height: 100px}
+
+        .venu-img {width: 500px;
+             height: 120px;
+            display: none;}
+
+        .venu {font-size: 15px;
+                width: 500px;}
+
+        .overlay {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            bottom: 0;
+            left: 70px;
+            right: 0;
+            height: 120px;
+            width: 50%;
+            opacity: 0;
+            transition: .2 ease;
+            border-radius: 10px;
+            background-color: rgba(50, 50, 50, 0.0);}
+    
+        .button-text {
+            padding: 20px 80px;
+            background-color: rgba(27, 27, 27, 0.0);
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 10px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);}
+
+
+        .container-space {width: 100vw;
+                          height: 100vh;}
+        
+        ol li {font-size: 18px;
+                position: relative;
+                top: 0;}
+
+        .button {
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 900;
+            font-family: 'Libre Baskerville', serif; 
+            padding: 5px 20px;
+            font-size: 18px;
+            background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+            background-color: rgb(129, 53, 3);
+            position: relative;
+            top: 20px;
+            right: 100px;}
+
+    }
+
+
+
+    @media screen and (max-width: 910px){
+        .footer-container {display: flex;
+                            align-items: center;}
+
+        .button {top: 50px;}
+         
+    }
+
+
+    @media screen and (max-width: 820px) {
+        html body {background-image: url(img/dreamstime2.jpg);}
+
+        .img2 {display: none;}
+
+        .img1 {width: 100vw;
+                height: 500px;
+                position: relative;
+                top: 75px;}
+
+        ul {display: none;}
+
+        .nav {display: none;}
+        
+        .container1 {width: 100vw;
+                    height: 600px;}
+
+        .container2 {height: 550px;}
+
+       
+
+        .j {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            font-size: 80px;
+            position: relative;
+            top: 100px;
+            right: 75px;
+            width: 200px;}
+        .and {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            font-size: 80px;
+            position: relative;
+            top: 100px;}
+        .t {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            font-size: 80px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;}
+
+        .container2 {width: 100vw;}
+        
+        .quote {font-size: 40px;
+                font-weight: 550;}
+
+        .invite {font-size: 18px;}
+
+        .info-h1, .sch-h1 {font-size: 40px;}
+
+
+        .venu-h2 {font-size: 25px;}
+
+        .venue-logo {width: 200px;
+                    height: 100px}
+
+        .venu-img {display: none;}
+
+        .venu {font-size: 16px;
+                width: 330px;
+                text-align: center;}
+        
+        .overlay {position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 120px;
+                width: 100%;
+                opacity: 0;
+                transition: .2 ease;
+                border-radius: 10px;
+                background-color: rgba(50, 50, 50, 0.8);}
+        
+        .button-text {
+                display: flex;
+                padding: 40px 80px;
+                background-color: rgba(27, 27, 27, 0.0);
+                border: none;
+                cursor: pointer;
+                color: gray;
+                font-size: 20px;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);}
+        
+
+        .container3 {width: 100vw;
+                    height: 80vh;}
+
+        .container4 {width: 100vw;
+                    height: 43vh;}
+
+        .ol-events {padding: 0;}
+        .ol-brackets {font-size: 15px;}
+
+        ol {margin-left: 10px;}
+
+        ol li {font-size: 16px;
+                position: relative;
+                top: 0;}
+
+        .footer-container {display: flex;
+                           align-items: center;}
+                        
+
+        .button {
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 900;
+            font-family: 'Libre Baskerville', serif; 
+            padding: 5px 20px;
+            font-size: 18px;
+            background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+            background-color: rgb(129, 53, 3);
+            position: relative;
+            top: 15px;
+            right: 105px;}
+
+    }
+
+    @media screen and (max-width: 414px) {
+        html body {background-image: url(img/Dream2.jpg);
+                    background-size: cover;
+                    margin: 0;
+                    padding: 0;}
+
+        .img2 {display: none;}
+
+        .img1 {width: 100vw;
+                height: 500px;
+                position: relative;
+                top: 75px;}
+
+        ul {display: none;}
+
+        .nav {background-color: rgba(27, 27, 27, 0.0);
+                position: scroll;}
+        
+        .container1, .container2, .container3, .container4 {margin-left: 0px;}
+
+        .container1 {width: 100vw;
+                    height: 600px;}
+
+        .container2 {width: 100vw;
+                    height: 550px;}
+
+        .j {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-top: 20px;
+            font-size: 80px;
+            position: relative;
+            top: 100px;
+            right: 75px;}
+        .and {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            font-size: 80px;
+            position: relative;
+            top: 100px;}
+        .t {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            margin-top: 0;
+            
+            font-size: 80px;
+            position: relative;
+            top: 100px;
+            left: 100px;}
+        
+        .quote {font-size: 40px;
+                font-weight: 550;}
+
+        .invite {font-size: 18px;}
+
+        .info-h1, .sch-h1 {font-size: 40px;}
+
+
+        .venu-h2 {font-size: 25px;
+                padding-top: 20px;}
+
+        .venue-logo {width: 200px;
+                    height: 100px}
+
+        .venu-img {display: none;}
+
+        .cont-menu {
+            color: white;
+            margin-right: 25px;
+            margin-left: 25px;
+            width: 54vw;
+            height: 1100px;
+        }
+        
+        .menu {
+            width: 350px;
+            font-size: 20px;
+        }   
+
+        .venu {font-size: 16px;
+                width: 330px;}
+
+        .container3 {width: 100vw;
+                    height: 80vh;}
+
+        ol {margin-left: 10px;}
+
+        ol li {font-size: 16px;
+                position: relative;
+                top: 0;}
+
+        .footer-container {
+                            width: 100vw;}
+
+        .button {
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 900;
+            font-family: 'Libre Baskerville', serif; 
+            padding: 5px 20px;
+            font-size: 18px;
+            background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+            background-color: rgb(129, 53, 3);
+            position: relative;
+            top: 15px;
+            left: 160px;}
+
+    }
+    
+    @media screen and (max-width: 375px) {
+        html body {background-image: url(img/Dream2.jpg);
+                    background-size: cover;
+                    overflow-x: hidden;}
+
+        .img2 {display: none;}
+
+        .img1 {width: 100vw;
+                height: 500px;
+                position: relative;
+                top: 75px;}
+
+        ul {display: none;}
+
+        .nav {background-color: rgba(27, 27, 27, 0.0);
+                position: scroll;}
+        
+        .container1 {margin-left: 0;
+                    width: 100vw;
+                    height: 675px;}
+
+        .j {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            margin-bottom: 0;
+            font-size: 80px;
+            position: relative;
+            top: 100px;
+            right: 75px;}
+        .and {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            font-size: 80px;
+            position: relative;
+            top: 100px;}
+        .t {
+            font-family: 'Herr Von Muellerhoff', cursive;
+            font-weight: 500;
+            margin-top: 0;
+            font-size: 80px;
+            position: relative;
+            top: 100px;
+            left: 100px;}
+
+        .container2 {margin-left: 0;
+                    width: 100vw;
+                    text-align: center;}
+        
+        .quote {font-size: 40px;
+                font-weight: 550;}
+
+        .invite {font-size: 18px;}
+
+        .info-h1{font-size: 40px;}
+
+        .overlay {position: absolute;
+            top: 15px;
+            bottom: 0;
+            left: -30px;
+            right: 0px;
+            height: 120px;
+            width: 100%;
+            opacity: 0;
+            transition: .2 ease;
+            border-radius: 10px;
+            background-color: rgba(27, 27, 27, 0.0);}
+
+        .cont-menu {
+            color: white;
+            margin-right: 15px;
+            margin-left: 15px;
+            width: 54vw;
+            height: 1100px;}
+        
+        .menu {
+            width: 350px;
+            font-size: 20px;}
+
+        .venu-h2 {font-size: 25px;
+                padding-top: 20px;}
+
+        .venue-logo {width: 200px;
+                    height: 100px;
+                    position: relative;
+                    right: 10px}
+
+        .container3 {margin-left: 0;
+                    width: 100vw;
+                    height: 100vh;}
+
+        .venu-img {display: none;}
+
+        .venue-quote {width: 330px;
+                    margin-top: 0;}
+
+        .invite {font-size: 16px;
+                width: 375px;}
+
+        .venu   {font-size: 16px;}
+
+        .sch-h1 {font-size: 40px;
+                position: relative; 
+                top: 30px;}
+
+        .container4 {margin-left: 0;
+                    width: 100vw;
+                    height: 70vh;}
+
+        .ol-times {margin-left: 0px;}
+
+        ol li {font-size: 16px;
+                position: relative;
+                top: 0;}
+
+        .button {
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: 900;
+            font-family: 'Libre Baskerville', serif; 
+            padding: 5px 20px;
+            font-size: 18px;
+            background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+            background-color: rgb(129, 53, 3);
+            position: relative;
+            top: 5px;
+            left: 140px;}
+
+    }
+
+    @media screen and (max-width: 360px) {
+        
+        .cont-menu {
+            color: white;
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 54vw;
+            height: 1150px;
+        }
+        
+        .menu {
+            width: 350px;
+            font-size: 20px;}
+    }
+

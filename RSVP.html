@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RSVP.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("v8m2GNp3A0fSTSoU6");
+    })();
+    </script>
+    <title>Jason & Troy</title>
+</head>
+<body>
+    <form>
+        <div class="rsvp-cont">
+            <h1>RSVP</h1>
+            <div class="small-rsvp-cont">
+                <h2>Can you attend?</h2>
+                    <textarea class="names" id="message" placeholder="Please type yes or no:  Names of attendees(inlude yourself):" rows="5"></textarea>
+                <button onclick="sendMail(event)">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

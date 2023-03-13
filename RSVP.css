@@ -1,0 +1,176 @@
+html body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-image: url(img/Grass.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Libre Baskerville', serif;
+    overflow-x: hidden;}
+
+.rsvp-cont {
+    background-size: auto;
+    background-image: url(img/dreamstime3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 10px solid rgb(110, 145, 159); */
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    left: 370px;
+    background-color: black;
+    color: white;
+    width: 60vw;    
+    height: 35vw;}
+
+.small-rsvp-cont {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* background-color: black; */
+    position: relative;
+    top: 50px;
+    right: 170px;
+    width: 30vw;
+    height: 20vw;
+}
+
+.names {
+    resize: none;
+    width: 200px;
+    height: 100px;
+}
+
+.yes-no {
+    display: flex
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-radio {
+    width: 1.23em;
+    height: 1.25em;
+    border: 2px solid #d8e4e2;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.radio-radio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(136, 208, 236);
+    border-radius: 50%;
+
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+.radio-input:checked + .radio-radio::after {
+    transform: scale(1);
+} 
+
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+    
+button {
+    position: relative;
+    top: 35px;
+    left: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 900;
+    font-family: 'Libre Baskerville', serif; 
+    padding: 5px 20px;
+    font-size: 18px;
+    background-image: linear-gradient(to bottom right,rgb(129,53,3),rgb(207, 127, 35));
+    background-color: rgb(129, 53, 3);
+}
+
+button:hover {
+    color: rgb(136, 208, 236);}
+
+
+@media screen and (max-width: 1280px) {
+
+.rsvp-cont {
+    background-size: contain;
+    top: 100px;
+    left: 105px;
+    width: 84vw;    
+    height: 75vh;}
+}
+
+@media screen and (max-width: 1024px) {
+
+.rsvp-cont {
+    background-size: contain;
+    top: 80px;
+    left: 80px;
+    width: 84vw;    
+    height: 75vh;}
+}
+
+@media screen and (max-width: 414px) {
+
+html body {background-repeat: repeat;}
+
+.rsvp-cont {
+    background-image: url(img/Dream2.jpg);
+    background-size: cover;
+    border-radius: 0;
+    font-size: 15px;
+    top: 180px;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+
+.small-rsvp-cont {
+    height: 50vh;
+    width: 90vw;
+    position: relative;
+    top: 30px;
+    right: 0;
+    left: 10px;
+}
+}
+
+@media screen and (max-width: 375px) {
+
+html body {background-repeat: repeat;}
+
+.rsvp-cont {
+    background-image: url(img/Dream2.jpg);
+    border-radius: 0;
+    font-size: 14px;
+    top: 150px;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+
+.small-rsvp-cont {
+    height: 50vh;
+    width: 90vw;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 10px;
+}
+}
